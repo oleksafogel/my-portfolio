@@ -3,6 +3,38 @@
   src: url(/fonts/KyivTypeSerif-Heavy3.ttf) format('truetype'), url(/fonts/KyivTypeSans-Heavy3.otf) format('opentype'), url(/fonts/KyivTypeSans-Heavy3.woff) format('woff'), url(/fonts/KyivTypeSans-Heavy3.woff2) format('woff2'), url(/fonts/KyivTypeSans-Heavy3.eot) format('embedded-opentype');
 }
 
-h1 {
-  font-family: 'Kyiv';
+:root {
+  --bg-color: #030416;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.hero-blue-circle {
+  z-index: -1;
+  position: absolute;
+  left: 1000px;
+  top: -120px;
+}
+
+.hero-yellow-circle {
+  z-index: -1;
+  position: absolute;
+  left: -64.5px;
+  top: 635px;
+}
+
+.intro h1 {
+  color: white;
+  font-family: 'Kyiv', sans-serif;
+  margin: 0 auto;
+  padding-top: 217px;
+  max-width: 996.33px;
+  text-align: center;
+}
+
+.link {
+  margin-top: 100px;
+  text-align: center;
 }
